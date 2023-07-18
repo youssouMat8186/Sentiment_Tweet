@@ -19,7 +19,7 @@ def load_model():
 
 
 def deploiement():
-    st.subheader("Déploiement du modèle")
+    #st.subheader("Déploiement du modèle")
 
     # Fonction pour prétraiter les données et effectuer les prédictions
     def make_predictions(uploaded_file):
