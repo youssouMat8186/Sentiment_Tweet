@@ -1,6 +1,12 @@
 import streamlit as st
 import plotly.express as px
 def display_sentiment_distribution(train_data):
+    st.title("Analyse des Sentiments des Tweets par Produit")
+    st.write("Cette section analyse les sentiments exprimés dans les tweets en fonction des différents types de produits. "
+             "Nous utiliserons une représentation graphique pour visualiser la répartition des tweets par sentiments et produits. "
+             "Ensuite, nous afficherons les mots les plus fréquents dans les tweets à l'aide d'un nuage de mots, en fonction des catégories sélectionnées. "
+             "Enfin, nous proposerons un outil de recherche pour trouver des tweets spécifiques en fonction d'un mot clé, du type de produit et du sentiment, "
+             "en mettant l'accent sur les tweets négatifs pour identifier les problèmes potentiels liés aux produits.")
     st.subheader("Répartition des tweets par sentiments et par produit")
 
     labels_sentiments = {0: 'NA', 1: 'Négatif', 2: 'Positif', 3: 'Neutre'}
