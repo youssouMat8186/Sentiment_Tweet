@@ -23,6 +23,16 @@ from script5 import Introduction,Choix_Modele, Optimisation_Hyper_Params,Text_Re
 from script6 import tokenize, load_model, deploiement
 from script7 import Bienvenue_dansApp
 
+st.markdown(
+    """
+    <style>
+        .stMarkdown {
+            text-align: justify;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 train_data = pd.read_csv('Train.csv',delimiter=',')
 test_data = pd.read_csv('Test.csv',delimiter=',')
