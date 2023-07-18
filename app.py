@@ -21,6 +21,7 @@ from script3 import generate_wordcloud
 from script4 import Tweet_Mots_Cles
 from script5 import Introduction,Choix_Modele, Optimisation_Hyper_Params,Text_Resultas,Developement_modele
 from script6 import tokenize, load_model, deploiement
+from script7 import Bienvenue_dansApp
 
 
 train_data = pd.read_csv('Train.csv',delimiter=',')
@@ -31,6 +32,7 @@ display_sentiment_distribution(train_data)
 generate_wordcloud(train_data)
 Tweet_Mots_Cles(train_data)
 Developement_modele()
+Bienvenue_dansApp()
 deploiement()
 
 
