@@ -18,7 +18,7 @@ import script1
 from script1 import load_data_and_description
 from script2 import display_sentiment_distribution
 from script3 import generate_wordcloud
-from script4 import Tweet_Mots_Cles
+from script4 import Tweet_Mots_Cles, find_tweets_with_text
 from script5 import Introduction,Choix_Modele, Optimisation_Hyper_Params,Text_Resultas,Developement_modele
 from script6 import tokenize, load_model, deploiement
 from script7 import Bienvenue_dansApp
