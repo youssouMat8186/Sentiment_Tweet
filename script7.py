@@ -3,7 +3,7 @@ import pandas as pd
 import base64
 
 def Bienvenue_dansApp():
-    #st.subheader("Déploiement du modèle")
+    st.subheader("Déploiement du modèle")
     st.subheader("Bienvenue dans l'application de prédiction de sentiments de tweets !")
     
     # Étape 1 : Télécharger le fichier de données
