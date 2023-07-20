@@ -200,6 +200,27 @@ def Text_Resultas():
     Ces résultats mettent en évidence l'efficacité de notre modèle d'apprentissage automatique dans la détection des sentiments et soulignent l'importance de continuer à améliorer notre modèle pour une meilleure détection des tweets négatifs, compte tenu de leur rareté dans les données.
     """
     st.write(text_resultas)
+    # Affichage du titre
+    st.subheader("Analyse des courbes d'apprentissage pour améliorer la détection de tweets négatifs")
+
+    # Affichage de la figure 'courbes_apprentissage.png'
+    st.image('courbes_apprentissage.png', use_column_width=True)
+
+    # Affichage du texte
+    st.write("Le graphique des courbes d'apprentissage montre comment la performance du modèle (dans ce cas, la capacité à détecter les tweets négatifs) évolue en fonction de la taille de l'ensemble d'entraînement. Voici ce que nous pouvons conclure du graphique :")
+    st.write("1. **Courbe d'apprentissage pour l'ensemble d'entraînement (bleu)** :")
+    st.write("- Lorsque la taille de l'ensemble d'entraînement est petite (10% des tweets), le modèle a une performance initiale basse pour détecter les tweets négatifs.")
+    st.write("- À mesure que la taille de l'ensemble d'entraînement augmente, le score de rappel pour les tweets négatifs augmente également.")
+    st.write("- Cela signifie que lorsque le modèle dispose de plus de tweets dans l'ensemble d'entraînement, il apprend mieux à détecter les tweets negatifs.")
+    st.write("2. **Courbe d'apprentissage pour l'ensemble de test (orange)** :")
+    st.write("- La courbe pour l'ensemble de test suit une tendance similaire à celle de l'ensemble d'entraînement, ce qui est généralement une bonne indication.")
+    st.write("- Cependant, le score de rappel pour les tweets négatifs sur l'ensemble de test est légèrement inférieur à celui sur l'ensemble d'entraînement. C'est normal car le modèle généralise moin bien sur des tweets qu'il n'a pas encore vus.")
+    st.write("Recommandation :")
+    st.write("Le graphique indique que l'ajout de tweets dans l'ensemble d'entraînement pourrait être bénéfique pour améliorer la détection des tweets négatifs. En augmentant la taille de l'ensemble d'entraînement avec plus de tweets négatifs, le modèle aura une meilleure compréhension des caractéristiques spécifiques aux tweets négatifs et améliorera sa performance.")
+    st.write("Cependant, il est important de garder à l'esprit la nécessité d'utiliser une approche de validation croisée (cross-validation) pour évaluer les performances du modèle avec différentes portions de tweets d'entraînement et de test. Cela permettra de garantir que le modèle généralise correctement sur de nouveaux tweets et évitera le surapprentissage (overfitting).")
+    st.write("En conclusion, ajouter des tweets à l'ensemble d'entraînement est une mesure pertinente pour améliorer la performance du modèle dans la détection de tweets négatifs, mais il faut le faire avec prudence et en utilisant une validation croisée pour assurer la qualité des prédictions sur de nouveaux tweets.")
+
+
 
 
 
