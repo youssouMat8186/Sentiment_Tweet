@@ -88,11 +88,11 @@ def Choix_Modele():
     st.write("Le meilleur modèle est SVC. Il a obtenu une exactitude de 0.682 et un score de sensibilité de la classe négative de 0.279.")
 
     st.write("""
-
-    Après avoir exploré différentes méthodes de vectorisation de texte telles que TF-IDF et Word Embeddings, ainsi que des techniques de réduction de dimensionnalité comme PCA, nous avons constaté que ces approches n'ont pas conduit à une amélioration significative du score de sensibilité de la classe négative. Malgré nos efforts, ces méthodes n'ont pas donné les résultats souhaités pour cette métrique spécifique.
-
-    Par conséquent, nous avons décidé de nous concentrer principalement sur la méthode CountVectorizer en combinaison avec le modèle SVC (Support Vector Classifier).
+    Après avoir exploré différentes méthodes de vectorisation de texte, telles que TF-IDF et les Word Embeddings, ainsi que des techniques de réduction de dimensionnalité comme PCA, nous avons également utilisé des techniques d'échantillonnage de la variable cible, telles que le suréchantillonnage et le sous-échantillonnage, pour remédier au problème de déséquilibre de la variable Sentiment. Cependant, nous avons constaté que malgré ces efforts, ces approches n'ont pas conduit à une amélioration significative du score de sensibilité de la classe négative. Les résultats obtenus pour cette métrique spécifique n'ont pas été satisfaisants.
              """)
+    st.write("""
+    Par conséquent, nous avons décidé de nous concentrer principalement sur la méthode CountVectorizer en combinaison avec le modèle SVC (Support Vector Classifier).
+    """)
 
 def Optimisation_Hyper_Params():
     st.subheader("Optimisation des hyperparamètres du modèle SVC")
