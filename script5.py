@@ -222,15 +222,13 @@ def Text_Resultas():
 
 
 
-
-
 def Developement_modele():
     Introduction()
     Choix_Modele()
     Optimisation_Hyper_Params()
     Text_Resultas()
 
-Developement_modele()
+
 
 
 
