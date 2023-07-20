@@ -58,4 +58,21 @@ def Tweet_Mots_Cles(train_data):
                 st.warning("Aucun tweet correspondant trouvé.")
         else:
             st.warning("Veuillez saisir un texte à rechercher.")
+            
+    # Résumé de l'analyse
+    st.markdown("""
+    Cet outil nous permet de rechercher des tweets dans l'ensemble des données d'entraînement en fonction d'un mot présent dans le tweet, du type de produit et du sentiment. Dans cette section, nous nous concentrons sur les tweets négatifs.
+
+    En analysant la répartition des tweets par sentiments et par produits, nous avons constaté que la majorité des tweets négatifs sont liés au type de produit 6. En examinant de plus près le nuage de mots, nous avons remarqué que les termes "Design Headaches", "iPad Design" et "tapworthy" sont fréquemment mentionnés dans les tweets négatifs associés au type de produit 6, mais ils sont rares dans l'ensemble des données.
+
+    Nous avons donc utilisé notre outil de recherche de mots-clés pour analyser les tweets négatifs contenant ces termes. Cette analyse a révélé une tendance générale de moqueries et de critiques envers le design de l'iPad 2 lors du festival SXSW.
+
+    Les utilisateurs expriment leur mécontentement envers le design de l'iPad, en mentionnant des problèmes de conception, des difficultés d'utilisation et des critiques sur l'esthétique de l'appareil.
+
+    Ces résultats sont basés sur l'analyse des tweets et des opinions exprimées par les utilisateurs. Il est important de noter que les problèmes spécifiques liés au design de l'iPad 2 peuvent varier d'un utilisateur à l'autre, mais des problèmes d'ergonomie, de fragilité, de poids, d'esthétique et d'innovation ont été fréquemment mentionnés.
+                
+    Ces observations nous aident à mieux comprendre les réactions des utilisateurs face au design de l'iPad 2 et peuvent être utiles pour identifier les aspects à améliorer dans les futurs développements de produits.
+    
+    En résumé, notre démarche pour l'analyse des sentiments des tweets est la suivante : nous avons examiné les différents types de produits afin de déterminer ceux qui suscitent le plus de tweets négatifs. À l'aide d'un nuage de mots, nous avons identifié les mots les plus fréquents dans les tweets négatifs pour ces types de produits. Ensuite, nous avons analysé spécifiquement les tweets négatifs contenant ces mots clés importants.
+    """)
 
