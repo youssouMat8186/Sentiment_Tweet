@@ -38,4 +38,4 @@ def Bienvenue_dansApp():
     # Contact
     st.markdown("**Contact**")
     st.markdown("""Si vous avez des questions concernant le fonctionnement de l'application ou les résultats, n'hésitez pas à nous contacter par courriel à youssouphamarega@gmail.com. Nous serons ravis de vous aider !""")
-    st.markdown("Merci d'utiliser notre application de prédiction de sentiments sur Twitter. Nous espérons que vous trouverez cette expérience intéressante et utile !")
+    st.markdown("Merci d'utiliser notre application de prédiction de sentiments de tweets. Nous espérons que vous trouverez cette expérience intéressante et utile !")
