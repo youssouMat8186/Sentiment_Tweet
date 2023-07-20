@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt
 
 def tokenize(text):
     stemmer = PorterStemmer()
+    if not df[df['Numero_Produit'] == 9].empty:
+        text += " Produit_9"
     return [stemmer.stem(word) for word in text.split()]
 
 # Fonction pour charger le modèle
