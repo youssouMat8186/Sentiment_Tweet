@@ -22,8 +22,9 @@ def load_data_and_description(train_data,test_data):
     
     st.markdown("Pour atteindre cet objectif, nous avons développé un modèle d'intelligence artificielle basé sur des techniques avancées de traitement du langage naturel (NLP). Notre modèle a été entraîné sur l'ensemble de données d'entraînement et a démontré une capacité accrue à détecter rapidement les tweets négatifs par rapport à une simple lecture manuelle. Cela est particulièrement pertinent étant donné que les tweets négatifs sont relativement rares dans l'ensemble de données d'entraînement.")
     
-    st.markdown("En développant ce modèle d'intelligence artificielle, nous espérons pouvoir prédire avec précision les sentiments associés aux tweets, ce qui pourrait avoir un impact significatif dans des domaines tels que le marketing, la veille des médias sociaux et la compréhension des opinions des utilisateurs. Dans la suite de ce projet, nous présenterons en détail notre méthodologie, les caractéristiques utilisées dans le modèle, ainsi que les résultats attendus de notre étude.")
-
+    st.markdown("En développant ce modèle d'intelligence artificielle, nous espérons pouvoir prédire avec précision les sentiments associés aux tweets, ce qui pourrait avoir un impact significatif dans des domaines tels que le marketing, la veille des médias sociaux et la compréhension des opinions des utilisateurs.")
+    
+    st.markdown("Dans la suite de ce projet, nous présenterons en détail l'analyse des sentiments des tweets par produit en utilisant des outils de visualisation. Ensuite, nous aborderons le développement et le déploiement du modèle d'intelligence artificielle à travers une application dédiée.")
 
     # Définition des descriptions des variables
     variable_descriptions = {
